@@ -4,7 +4,7 @@ Introduction to PHP code
 
 ### Before you begin
 
-Check out a new branch from master for this exercise.  Then navigate to exercises/php-intro directory in your terminal.
+Check out a new branch from master for this exercise.  Then navigate to exercises/php_intro directory in your terminal.
 
 ### Exercise
 
@@ -15,7 +15,7 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
 	* ?&gt; is the closing tag
 	* everything between is considered to be PHP code
 1. Read through the following information links:
-	* [**Variables**](https://www.w3schools.com/php/php_variables.asp)
+	* [**Variables**](https://www.php.net/manual/en/language.variables.basics.php)
 	* [**print statements**](https://www.php.net/manual/en/function.print.php)
 1. In your intro.php, recreate the following Javascript code:
 ```javascript
@@ -24,7 +24,10 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
 	var sentence = "I am " + name + " and I am " + age + " years old.  That is " + (age*7) + " in dog years";
 	document.writeln( sentence );
 ```
+1. Go to your browser, navigate to localhost:/senior-back-end-php-lessons/exercises/php_intro/intro.php
 1. Verify that your file looks like the following: TODO: add image
+1. Fix any errors
+1. Submit code via pull request to your branch.
 
 
 
