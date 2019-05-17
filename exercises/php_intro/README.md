@@ -1,6 +1,6 @@
 # PHP intro
 
-Introduction to PHP code
+Introduction to PHP code - vars, math, and strings
 
 ### Before you begin
 
@@ -28,6 +28,24 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
 1. Verify that your file looks like the following: TODO: add image
 1. Fix any errors
 1. Submit code via pull request to your branch.
+
+# extra!
+
+You can add a variable directly into a string, as long as the string is a double quote string.
+- [***PHP Double quotes***](https://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.double) allow translation of both variables and special characters.
+- [***PHP single quotes***](https://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.single) don't translate.  They are preferable when you don't plan on translating any part of the string.
+### for example:
+``` php
+	<?php
+		$name = 'Jack';
+		$sentence = "Greetings, $name!";
+		$sentence2 = 'Greetings, $name!';
+		print($sentence);
+		print('<br>');
+		print($sentence2);
+	?>
+```
+
 
 
 

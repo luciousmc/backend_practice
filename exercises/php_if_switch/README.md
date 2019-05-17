@@ -1,6 +1,6 @@
 # PHP if_switch
 
-Introduction to PHP code
+Introduction to PHP code - if and switch
 
 ### Before you begin
 
