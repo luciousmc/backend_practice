@@ -25,7 +25,7 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
 	document.writeln( sentence );
 ```
 1. Go to your browser, navigate to localhost:/senior-back-end-php-lessons/exercises/php_intro/intro.php
-1. Verify that your file looks like the following: TODO: add image
+1. Verify that your file looks like the following: ![intro example](../../demoassets/intro.png)
 1. Fix any errors
 1. Submit code via pull request to your branch.
 
