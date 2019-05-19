@@ -23,7 +23,9 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
 	}
 ```
 1. Go to your browser, navigate to localhost:/senior-back-end-php-lessons/exercises/php_if_switch/index.php
-1. Verify that your file looks like the following: TODO: add image
+1. Verify that your file looks like the following: 
+	* time is odd ![odd time](../../demoassets/ifswitch_1.png)
+	* time is even ![even time](../../demoassets/ifswitch_2.png)
 1. Fix any errors
 1. Read through the following information links:
 	* [**Date function**](https://www.php.net/manual/en/function.date.php).  Specifically find the code for Month (2 digit without leading zero, and Day of the month, 2 digit, without leading zero)
@@ -47,7 +49,8 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
 	}
 	document.writeln(message);
 ```
-1. Test your code at the appropriate address.
+1. Test your code at the appropriate address.  It should look something like this: 
+	* If it was january 1st: ![date is 1-1](../../demoassets/ifswitch_3.png)
 1. Submit code via pull request to your branch.
 
 
