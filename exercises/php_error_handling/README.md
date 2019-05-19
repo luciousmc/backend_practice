@@ -25,7 +25,12 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
 1. Read about [**error exception throwing**](https://www.php.net/manual/en/language.exceptions.php)
 1. in your code, using the link above, throw an exception with text of "I want an error".
 1. Run the file, and see if you get the appropriate output of "I want an error" being printed.
+    * example: ![movie data html](../../demoassets/error_1output.png)
 1. Comment out the exception throwing code so we can give you feedback.
+1. Put a call to a function called "doStuff".  Yes, I know there is no such function.
+1. Run your code, and see that your custom error handler was called.  It should loook like this:
+    * example: ![movie data html](../../demoassets/error_2output.png)
+1. Comment out the doStuff function call.
 1. Read about [**random numbers**](https://www.php.net/manual/en/function.rand.php) in PHP.
 1. Set a variable, randomNumber, equal to a random number between 1 and 10
 1. Put a conditional.  If the random number is odd, simply print the "The number was <number>" with the number you got.
