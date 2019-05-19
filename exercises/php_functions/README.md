@@ -33,7 +33,8 @@ var answer2 = doMath( '2','4','*');
 document.writeln( `answer1: ${answer1}<br>answer2: ${answer2}`);
 ```
 1. Go to your browser, navigate to localhost:/senior-back-end-php-lessons/exercises/php_functions/index.php
-1. Verify that your file looks like the following: TODO: add image
+1. Verify that your file looks like the following: 
+    * browser: ![movie data browser](../../demoassets/functions_1.png)
 1. Fix any errors
 1. Read through the following information links
     * [**function scope**](https://www.php.net/manual/en/language.variables.scope.php)
@@ -61,6 +62,9 @@ var karlPosition = findPerson( 'Karl' );
 document.writeln(`Dirk was found at position ${dirkPosition} and Karl was found at position ${karlPosition});
 ```
 1. Test your code at the appropriate address.  Does it look like this?
+    * Bonus: my original JS has a bug in it.  You probably got 0 and 0.  For extra credit, fix the bug.  Correct example below.
+    * output: ![movie data html](../../demoassets/functions_2.png)
+    
 1. Submit code via pull request to your branch.
 
 
