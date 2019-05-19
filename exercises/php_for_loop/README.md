@@ -22,7 +22,9 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
     }
 ```
 1. Go to your browser, navigate to localhost:/senior-back-end-php-lessons/exercises/php_for_loop/index.php
-1. Verify that your file looks like the following: TODO: add image
+1. Verify that your file looks like the following: 
+    * html code: ![people list loop code](../../demoassets/loop_1html.png)
+    * browser: ![people list loop code](../../demoassets/loop_1output.png)
 1. Fix any errors
 1. Read through the following information links
     * [**PHP Associative array**](https://www.geeksforgeeks.org/associative-arrays-in-php/)
@@ -61,7 +63,9 @@ for( var key in film.cast){
 }
 document.write('<pre>'+sentence+'</pre>)
 ```
-1. Test your code at the appropriate address.
+1. Test your code at the appropriate address.  It should look like the following:
+    * html code: ![movie data html](../../demoassets/loop_2html.png)
+    * browser: ![movie data browser](../../demoassets/loop_2output.png)
 1. Submit code via pull request to your branch.
 
 
