@@ -16,11 +16,11 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
     * inside it will simply print the error out like this:
     ```php
     <?php 
-        print( $error->getMessage() );
+        print( 'custom error: ' . $error->getMessage() );
     ?>
     ```
 1. Again in your php file, after your function "error_handler", call the function "set_error_handler"
-1. Pass the "error_handler" function, as a string, to the "set_error_handler" function.
+1. Pass the "error_handler" function, as a string, to the "set_exception_handler" function.
 1. the error_handler function will now be called if any errors happen in the code when it runs.
 1. Read about [**error exception throwing**](https://www.php.net/manual/en/language.exceptions.php)
 1. in your code, using the link above, throw an exception with text of "I want an error".
