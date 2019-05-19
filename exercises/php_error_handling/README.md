@@ -28,6 +28,8 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
 1. Comment out the exception throwing code so we can give you feedback.
 1. Read about [**random numbers**](https://www.php.net/manual/en/function.rand.php) in PHP.
 1. Set a variable, randomNumber, equal to a random number between 1 and 10
-1. Put a conditional.  If the random number is odd, simply print the number.
+1. Put a conditional.  If the random number is odd, simply print the "The number was <number>" with the number you got.
 1. if the random number is even, throw an exception "Exception: the number was even".
-1. Test your putput, it should look like this:  TODO: make image for example
+1. Test your putput, it should look like this:
+    * odd number: ![movie data html](../../demoassets/loop_2html.png)
+    * even number: ![movie data browser](../../demoassets/loop_2output.png)
