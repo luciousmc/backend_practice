@@ -36,5 +36,5 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
 1. Put a conditional.  If the random number is odd, simply print the "The number was <number>" with the number you got.
 1. if the random number is even, throw an exception "Exception: the number was even".
 1. Test your putput, it should look like this:
-    * odd number: ![movie data html](../../demoassets/loop_2html.png)
-    * even number: ![movie data browser](../../demoassets/loop_2output.png)
+    * odd number: ![movie data html](../../demoassets/error_3output.png)
+    * even number: ![movie data browser](../../demoassets/error_4output.png)
