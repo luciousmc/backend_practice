@@ -32,9 +32,10 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
         document.writeln( capWord( "sparkles" ));
     <script>
     ```
-1. Test your output. It should look like this: TODO : put image
+1. Test your output. It should look like this: 
+    * ![includes 1 output](../../demoassets/includes_1output.png)
 1. make a file, credentials.php
-1. Put an object, named creds, with the following data inside it
+1. Put an object (associative array), named creds, with the following data inside it
     * name: your name
     * age: your age
     * occupation: your previous job
@@ -42,6 +43,7 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
 1. include the above file, credentials.php
 1. make a variable $sentence
 1. like you did in php intro, use the data from the creds variable to build the sentence.  Treat the variable creds as if it is currently in readdata.php.  Don't make a new one!
-1. Test your output.  It should look like this: TODO add image
+1. Test your output.  It should look like this: 
+    * ![includes 2 output](../../demoassets/includes_2output.png)
 
 
