@@ -18,6 +18,7 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
         var capLetter = firstLetter.toUpperCase();
         var remainingLetters = word.substr(1);
         var combinedWord = capLetter + remainingLetters;
+        return combinedWord;
     }
     ```
 1. Read through the following information links:
