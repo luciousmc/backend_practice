@@ -11,7 +11,7 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
 1. create a file named index.php
 1. Read through the following information links:
 	* [**if statements**](https://www.php.net/manual/en/control-structures.if.php)
-	* [**microtime function(gets current Unix timestamp in microseconds)**](https://www.php.net/manual/en/function.microtime.php)
+	* [**microtime function(gets current Unix timestamp in microseconds)**](https://www.php.net/manual/en/function.microtime.php).  Be aware: the Date.now() function returns milliseconds, not microseconds.  You miiiight need to convert it or use a different function.  I'm just sayin'
 	* [**switch statements**](https://www.php.net/manual/en/control-structures.switch.php)
 1. In your index.php, recreate the following Javascript code:
 ```javascript
