@@ -26,7 +26,9 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
     * inside the php tags, put a print function call
         * print();
     * inside the print function argument, put the $now variable you made above
-    * test the page
+    * test the page, it should look like this:
+        * html code: ![movie data html](../../demoassets/dom_1html.png)
+        * browser: ![movie data browser](../../demoassets/dom_1output.png)
 1. You can switch in and out of php to make html with logic structures like if, for, while, etc
     * look up the [**'short open tag'**](https://php.net/manual/en/function.echo.php) in the echo function documentation
     * make a for loop in PHP to go from 1 to 10;
@@ -58,5 +60,7 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
             <?= $i ?>
 ```
 #
-*  check for any errors
+*  check for any errors, it should look something like this:
+    * html code: ![movie data html](../../demoassets/dom_2html.png)
+    * browser: ![movie data browser](../../demoassets/dom_2output.png)
 *  run your page
