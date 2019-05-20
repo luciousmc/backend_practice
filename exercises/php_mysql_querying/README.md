@@ -10,8 +10,11 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
 ### Exercise
 
 1. Open up phpmyadmin
-1. You should have a table with information in it.  One that you used previously for Node
-1. TODO for dan: make a mysql dump for a fixed table for students to use
+1. go to your cohort database by selecting it on the left
+1. click  on the SQL tab at the top
+    * ![selecting db and opening sql](../../demoassets/importing_into_database.gif)
+1. copy the contents of tabledump.sql in this database, and paste it into the SQL tab, and click "go"
+    * ![importing db dump into db](../../demoassets/importing_sql_save.gif)
 1. recreate your mysql_credentials files from the previous prototype
     * mysql_credentials.php
     * mysql_credentials.config
