@@ -37,11 +37,16 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
     * ![intentional error](../../demoassets/php_mysql_querying_wrong_table.png)
 1. create an associative array, called $output
     * add a key of success, make it false
-1. create an if statement, use the function [**mysqli_num_rows**](https://www.php.net/manual/en/mysqli-result.num-rows.php) to see if there are any records available
-    * if the mysqli_num_rows is = to 0
+1. We need to determine if there was any data.  This is not always done, but useful many times.
+    * create an if statement, 
+    * use the function [**mysqli_num_rows**](https://www.php.net/manual/en/mysqli-result.num-rows.php) in the if statement
+        * if( mysql_num_rows(???) )
+    * mysqli_num_rows requires the result of the query, give mysqli_num_rows your result variable
+    * test if the number of rows is 0
         * print "no data available" and exit
-        * ![intentional error](../../demoassets/php_mysql_querying_no_data.png)
-1. change the $output key of 'success' to true
+1. ![intentional error](../../demoassets/php_mysql_querying_no_data.png)
+    * to test this, add "LIMIT 0" to the end of your query" to test with no data.
+1. Now that we know we have data (we wouldn't be at this point if not), change the $output key of 'success' to true
 1. add a key of 'data' to $output, and make it an array
 1. create a while loop and use [**mysqli_fetch_assoc**](https://www.php.net/manual/en/mysqli-result.fetch-assoc.php).  Look for an example with a while loop
     * assign the while loop to a variable called $row, like in the example
