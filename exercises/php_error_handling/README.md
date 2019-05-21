@@ -10,7 +10,7 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
 ### Exercise
 
 1. create a file named index.php
-1. Read about [**set_error_handler**](https://www.php.net/manual/en/function.set-error-handler.php)
+1. Read about [**set_exception_handler**](https://www.php.net/manual/en/function.set-exception-handler.php)
 1. In your index.php, create a function called error_handler
     * it takes in a single parameter, error
     * inside it will simply print the error out like this:
