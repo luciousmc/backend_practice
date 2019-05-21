@@ -12,7 +12,7 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
 1. Open up phpmyadmin
 1. use your classes' database you made previously with your instructor.  If a database doesn't exist, make one.
 1. create a file named mysql_credentials.php
-1. Read about [**set_error_handler**](https://php.net/manual/en/function.mysqli-connect.php) (focus on the procedural version, not the oop (construct) version)
+1. Read about [**mysqli_connect**](https://php.net/manual/en/function.mysqli-connect.php) (focus on the procedural version, not the oop (construct) version)
 1. In your mysql_credentials,
     * create a variable called $conn
     * assign to it call of the function mysqli_connect (DON'T FORGET THE 'i').
