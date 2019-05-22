@@ -19,7 +19,7 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
     * mysql_credentials.php
     * mysql_credentials.config
     * .gitignore
-1. in your mysql_credentials.php file, remote the truthy test to print the $conn variable.  We won't do that again.  You will need the falsey test
+1. in your mysql_credentials.php file, remote the truthy test to print the $conn variable.  We won't do that again.  You will need the falsey test.  Then exit.
 1. make a file, endpoint.php
 1. In endpoint.php, require once your credential file to connect
 1. in phpMyAdmin test write a query to select all information from the table you are going to draw data from
