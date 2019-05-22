@@ -38,6 +38,7 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
 1. add that to your sentence.  So now it should say "Hello, NAME, you are AGE years old, and your favorite food is FAVFOOD"
     * replace the cap words with their appropriate variables
 1, in Postman, Where it says "GET", click on it and change it to POST
+    * ![selecting db and opening sql](../../demoassets/php_received_data_04_1.png)
 1. look for the label "body" and click it
     * ![selecting db and opening sql](../../demoassets/php_received_data_05.png)
 1. look for the label "x-www-form-urlencoded"
@@ -56,3 +57,21 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
 name" and exit
 1. disable / clear the name param, and see the error message appears
     * ![selecting db and opening sql](../../demoassets/php_received_data_07.png)
+1. make a pull request for your current status before moving onto the next part
+1. sometimes data is sent to PHP via json.  Axios, Fetch, even AJAX can send json data instead of url-encoded data.  By default, currently, PHP doesn't have the ability to parse it from the body.  So we're going to draw it out of the raw body.
+1. use file_get_contents, but the file will be "php://input", this is the raw body json_input
+1. put the result of file_get_contents into a variable called $json_input
+1. the contents of $input will now be a json encoded string.  Use json_decode to convert it to an object/array.  
+    * first param, give it json_input
+    * second param, give it true
+    * read more about [**json_decode**](https://www.php.net/manual/en/function.json-decode.php).  You miiiight be asked about that second param, right?
+1. $input now has an associative array in it, with favfood inside it.  Use this to supply your $favfood variable that formerly came from $_POST
+1. in Postman, under body, instead of "x-www-form-urlencoded", change it to "raw".  This will literally take whatever characters you put in the box below
+    * ![selecting db and opening sql](../../demoassets/php_received_data_08.png)
+1. in the box below, put this json with your fav food:
+```
+{"favfood":"salmon"}
+```
+1. test your endpoint
+    * ![selecting db and opening sql](../../demoassets/php_received_data_09.png)
+1. make a pull request with the current version.  Don't forget to include your screen shots.
