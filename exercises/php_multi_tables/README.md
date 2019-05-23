@@ -110,6 +110,7 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
             * releaseDate,
             * gross, 
             * status
+    * output should look like this: ![multi table join](../../demoassets/php_multitable_01.png)
 1. in your while loop
     1. get the ID from the $row
     1. check if the ID you got exists as a key in $output
