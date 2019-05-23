@@ -23,7 +23,7 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
     * add the row to the output
 1. json encode the output
 1. print the output
-    * ```
+    ```
             [
                 {
                     "id": "1",
@@ -88,7 +88,8 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
                     "stage": "released"
                 }
             ]       
-```
+    ```
+
 
 #### multi-table join readd
 1. Read about [** MySQL join**](https://dev.mysql.com/doc/refman/8.0/en/join.html)
@@ -125,7 +126,8 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
         * put the row's market, gross, releaseDate, and status to a new array
         * push the new array into the releaseData key in the current ID output
 1. encode and print out your data as normal
-1. ```json
+1. 
+```json
 {
     "1": {
         "id": "1",
@@ -156,11 +158,11 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
         ]
     },
     "2": {
-        "id": "1",
-        "title": "Spiderman",
-        "director": "Sam Rami",
-        "totalGross": "880000000",
-        "USRelease": "2002-01-01",
+        "id": "2",
+        "title": "Deadpool 2",
+        "director": "Chuck Arling",
+        "totalGross": "730000000",
+        "USRelease": "2017-04-20",
         "stage": "released",
         "releaseData": [
             {
@@ -192,7 +194,3 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
 }
 ```
 1. extra: make a file, getData3, that instead of using the above method, uses the group by and group concat functions instead
-
-1. test your endpoint
-    * ![selecting db and opening sql](../../demoassets/php_received_data_09.png)
-1. make a pull request with the current version.  Don't forget to include your screen shots.
