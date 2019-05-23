@@ -23,7 +23,72 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
     * add the row to the output
 1. json encode the output
 1. print the output
-    * OUTPUT
+    * ```
+            [
+                {
+                    "id": "1",
+                    "title": "Spiderman",
+                    "director": "Sam Rami",
+                    "initialRelease": "2002-01-01",
+                    "totalGross": "880000000",
+                    "releaseData": [
+                        {
+                            "market": "China",
+                            "gross": 200000000,
+                            "releaseDate": "2003-01-01",
+                            "status": "released"
+                        },
+                        {
+                            "market": "Mexico",
+                            "gross": 30000000,
+                            "releaseDate": "2002-05-03",
+                            "status": "released"
+                        },
+                        {
+                            "market": "Europe",
+                            "gross": 130000000,
+                            "releaseDate": "2002-03-20",
+                            "status": "released"
+                        }
+                    ],
+                    "stage": "released"
+                },
+                {
+                    "id": "2",
+                    "title": "Deadpool 2",
+                    "director": "Chuck Arling",
+                    "initialRelease": "2017-04-20",
+                    "totalGross": "730000000",
+                    "releaseData": [
+                        {
+                            "market": "China",
+                            "gross": 0,
+                            "releaseDate": "2020-01-01",
+                            "status": "pre-release"
+                        },
+                        {
+                            "market": "Mexico",
+                            "gross": 80000000,
+                            "releaseDate": "2018-03-04",
+                            "status": "released"
+                        },
+                        {
+                            "market": "Germany",
+                            "gross": 2000000,
+                            "releaseDate": "2017-04-20",
+                            "status": "released"
+                        },
+                        {
+                            "market": "France",
+                            "gross": 50000000,
+                            "releaseDate": "2017-05-20",
+                            "status": "released"
+                        }
+                    ],
+                    "stage": "released"
+                }
+            ]       
+```
 
 #### multi-table join readd
 1. Read about [** MySQL join**](https://dev.mysql.com/doc/refman/8.0/en/join.html)
@@ -49,12 +114,83 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
     1. check if the ID you got exists as a key in $output
     1. if it does not have that id
         * add a new key, releaseData, as an empty array, to row
-        * add the row to the output
+        * make an array $thisData and add the following values from the $row
+            * market
+            * releaseDate
+            * gross
+            * status
+        * use the unset function to remove those same keys FROM the row variable
+        * push the $thisData to the releaseData key in the row
     1. if it does have that id already
         * put the row's market, gross, releaseDate, and status to a new array
         * push the new array into the releaseData key in the current ID output
 1. encode and print out your data as normal
-1. OUTPUT
+1. ```json
+{
+    "1": {
+        "id": "1",
+        "title": "Spiderman",
+        "director": "Sam Rami",
+        "totalGross": "880000000",
+        "USRelease": "2002-01-01",
+        "stage": "released",
+        "releaseData": [
+            {
+                "market": "China",
+                "releaseDate": "2003-01-01",
+                "gross": "200000000",
+                "status": "released"
+            },
+            {
+                "market": "Mexico",
+                "releaseDate": "2002-05-03",
+                "gross": "30000000",
+                "status": "released"
+            },
+            {
+                "market": "Europe",
+                "releaseDate": "2002-03-20",
+                "gross": "130000000",
+                "status": "released"
+            }
+        ]
+    },
+    "2": {
+        "id": "1",
+        "title": "Spiderman",
+        "director": "Sam Rami",
+        "totalGross": "880000000",
+        "USRelease": "2002-01-01",
+        "stage": "released",
+        "releaseData": [
+            {
+                "market": "China",
+                "releaseDate": "2020-01-01",
+                "gross": "0",
+                "status": "pre-release"
+            },
+            {
+                "market": "Mexico",
+                "releaseDate": "2018-03-04",
+                "gross": "80000000",
+                "status": "released"
+            },
+            {
+                "market": "Germany",
+                "releaseDate": "2017-04-20",
+                "gross": "2000000",
+                "status": "released"
+            },
+            {
+                "market": "France",
+                "releaseDate": "2017-05-20",
+                "gross": "50000000",
+                "status": "released"
+            }
+        ]
+    }
+}
+```
 1. extra: make a file, getData3, that instead of using the above method, uses the group by and group concat functions instead
 
 1. test your endpoint
