@@ -103,7 +103,7 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
             * title
             * director
             * totalGross
-            * releaseDate as originalReleaseDate
+            * initialRelease as originalReleaseDate
             * stage
         * multitable_subtable:
             * market, 
