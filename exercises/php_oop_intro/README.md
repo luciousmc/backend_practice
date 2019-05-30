@@ -97,7 +97,7 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
         1. in your original person object
             * add a protected property called age, assign it the value 0
             * add a public method setAge, that assigns a given number to the age
-    1, instantiate a teacher with the following:
+    1. instantiate a teacher with the following:
         1. $jack = new Teacher('Jack','Dorsey','Math');
         1. try to set jack's age directly, did it work?
         1. try to call the setAge method and give him a value of 34, did it work?
