@@ -30,9 +30,15 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
 <?php
 
 //Import PHPMailer classes into the global namespace
-use PHPMailer\PHPMailer\PHPMailer;
+namespace PHPMailer\PHPMailer;
+require_once('gmailcredentials.php');
+//Import PHPMailer classes into the global namespace
+//use PHPMailer\PHPMailer\PHPMailer;
+require_once('PHPMailer/src/Exception.php');
+require_once('PHPMailer/src/PHPMailer.php');
+require_once('PHPMailer/src/SMTP.php');
+//require '../vendor/autoload.php';
 
-require '../vendor/autoload.php';
 
 //Create a new PHPMailer instance
 $mail = new PHPMailer;
@@ -118,4 +124,6 @@ if (!$mail->send()) {
 
 ```
 1. use POSTMAN to send the necessary data to your endpoint and see the response.  IF it says message sent, then check your email account for the new message
-![output image](../../demoassets/php_oop_calc_01.png)
+    - ![PHP mailer send](../../demoassets/php_oop_mailer_01.png)
+    - ![PHP mailer success](../../demoassets/php_oop_mailer_02.png)
+
