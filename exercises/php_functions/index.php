@@ -1,22 +1,3 @@
-<!-- 
-  function doMath( num1, num2, op){
-    num1 = parseFloat(num1);
-    num2 = parseFloat(num2);
-    if(op==='+'){
-        return num1+num2;
-    } else if( op === '-'){
-        return num1-num2;
-    } else if( op === '*' || op === 'x' || op === 'X'){
-        return num1 * num2;
-    } else if( op === '/'){
-        return num1 / num2;
-    }
-}
-
-var answer1 = doMath( 2, 4, '+');
-var answer2 = doMath( '2','4','*');
-document.writeln( `answer1: ${answer1}<br>answer2: ${answer2}`); 
--->
 
 <?php
   function doMath ($num1, $num2, $op) {
@@ -36,4 +17,25 @@ document.writeln( `answer1: ${answer1}<br>answer2: ${answer2}`);
   $answer1 = doMath(2, 4, "+");
   $answer2 = doMath("2", "4", "*");
   print "answer1: $answer1 <br> answer2: $answer2";
+?>
+
+<?php 
+
+  function findPerson ( $name ) {
+    $people = array("Jake", "Jane", "Dirk", "Dane");
+    $peopleLength = count($people);
+    $currentPosition = 0;
+
+    while ($currentPosition < $peopleLength && $people[$currentPosition] !== $name) {
+      $currentPosition++;
+    }
+    if ($currentPosition < $peopleLength) {
+      return $currentPosition;
+    }
+    return -1;
+  }
+  $dirkPosition = findPerson("Dirk");
+  $karlPosition = findPerson("Karl");
+
+  echo "<br>Dirk was found at position $dirkPosition and Karl was found at position $karlPosition";
 ?>
