@@ -1,4 +1,4 @@
-# PHP if_switch
+# PHP loops
 
 Introduction to PHP code - for loop
 
@@ -18,7 +18,7 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
     var people = ['John','Jane','Sarah','Smithers','Anna'];
 	var arrayLength = people.length; //yes, there is a reason I put this here for PHP
 	for( var peopleI = 0; peopleI < arrayLength; peopleI++){
-        console.log( "<div>" + people[ peopleI ]);
+        console.log( "<div>" + people[ peopleI ] + "</div>");
     }
 ```
 1. Go to your browser, navigate to localhost:/senior-back-end-php-lessons/exercises/php_for_loop/index.php

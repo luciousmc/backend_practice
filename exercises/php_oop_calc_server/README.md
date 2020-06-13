@@ -1,4 +1,4 @@
-# PHP php receiving data
+# PHP OOP Calc Server
 
 Introduction to PHP code - oop calc server
 

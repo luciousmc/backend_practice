@@ -1,21 +1,21 @@
-# PHP if_switch
+# PHP OOP Intro
 
-Introduction to PHP code - php oop intro
+Introduction to PHP code - OOP Intro
 
-### Before you begin
+### Before You Begin
 
-Check out a new branch from master for this exercise.  Then navigate to exercises/php_oop_intro directory in your terminal.
+Check out a new branch from `master` for this exercise.  Then navigate to `exercises/php_oop_intro directory` in your terminal.
 
 ### Exercise
 
-#### basic creation
-1. create a file named test.php
+#### Basic Creation
+1. Create a file named `test.php`.
 1. Read through the following information links:
-	* [**PHP oop intro**](https://www.php.net/manual/en/language.oop5.basic.php) Particularly these sections: 
-        * main
-        * example 1 - 4
-        * example 6 - 7
-1. Recreate the following object from JS
+	* [**PHP OOP basics**](https://www.php.net/manual/en/language.oop5.basic.php), particularly these sections: 
+        * The overview
+        * Examples #1 - #4
+        * Examples #6 - #7
+1. Recreate the following object from JS:
 ```javascript
     class Animal{
         constructor(){
@@ -32,9 +32,9 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
     rex.setName( 'Rex' );
     rex.say('Hello!');
 ```
-#### constructor assignment
-1. Constructors [**PHP oop constructors**](https://www.php.net/manual/en/language.oop5.decon.php) up to example 1
-1. in test.php recreate the following:
+#### Constructor Assignment
+1. Read through [**Constructors and Destructors**](https://www.php.net/manual/en/language.oop5.decon.php), up through Example #1.
+1. In `test.php`, recreate the following:
 ```javascript
     class Critter{
         constructor(name, breed){
@@ -49,9 +49,9 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
     simon.say('Hello!');
 ```
 
-#### inheritance
-1. Read the following [**PHP oop object inheritance**](https://www.php.net/manual/en/language.oop5.inheritance.php) up to example #9
-1. recreate the following js code: 
+#### Inheritance
+1. Read through [**Object Inheritance**](https://www.php.net/manual/en/language.oop5.inheritance.php), up through Example #9.
+1. Recreate the following JS code:
 ```javascript
     class Cat extends Critter{
         purr( message ){
@@ -63,49 +63,44 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
     felix.purr();
 ```
 
-### public, protected, private
-1. Read the following: [**PHP oop object inheritance**](https://www.php.net/manual/en/language.oop5.visibility.php) specifically "property visibility" and "method visibility"
-1. create an object that does the following
-    1. named "Person"
-    1. has the following properties:
-        * firstName - make this public
-        * lastName - make this private
-    1. takes in a first and last name in its constructor and assigns them to its properties
-    1. has a private method called getName
-        * returns the first and last name concatenated together.  For example "Joe Smith"
-        * make the method private
-    1. has a public method called sayName
-        * calls the getName method, and concats its return value with "Hello, I am".
-        * for example "Hello, I am Joe Smith"
-        * do not directly pull from the name properties in this method!
-    1. test (any lines that throw errors, comment them out after you they fail. Show screen shots of failure/successes):
-        1. create a new object $joe with a name of 'Joe' and 'Smith'
-        1. directly print the object's first name, did it work?
-        1. directly print the object's last name, did it work?
-        1. call the object's getName method, did it work?
-        1. call the object's sayName method, did it work?
-    1. add an inheritance class called Teacher that builds on Person
-        * read about calling the parent constructor here: [**PHP calling parent constructor**](https://www.php.net/manual/en/language.oop5.decon.php)
-        1. in its constructor take in the teaching topic, the first name, and the last name.
-        1. pass the first name and last name to the parent constructor
-        1. add a new public method - teach
-            * takes in a string, and prints the following:
-                * "Hello, I am [firstName] [lastName], and I teach [teachingTopic]: today's lesson: [message]"
-                * do not directly access first name and last name, use the getName method from the parent
-            * add a public method called sayAgeToStudent
-                * prints "I am [age] years old"
-        1. in your original person object
-            * add a protected property called age, assign it the value 0
-            * add a public method setAge, that assigns a given number to the age
-    1. instantiate a teacher with the following:
-        1. $jack = new Teacher('Jack','Dorsey','Math');
-        1. try to set jack's age directly, did it work?
-        1. try to call the setAge method and give him a value of 34, did it work?
-        1. call the teacher's teach argument of "how to say hello", did it work?
-        1. call the teacher's getAge method, did it work?
-    
-
-
-
-
-
+### Public, Protected, & Private Properties and Methods
+1. Read through [**Visibility**](https://www.php.net/manual/en/language.oop5.visibility.php), specifically "Property Visibility" and "Method Visibility" sections.
+1. Create a class that does the following:
+    1. Is named `Person`.
+    1. Has the following properties:
+        * `firstName` - make this `public`
+        * `lastName` - make this `private`
+    1. Expects first and last name parameters in its constructor and assigns their values to the properties above.
+    1. Has the method `getName()`:
+        * It returns the first and last name concatenated together.  For example, `"Joe Smith"`.
+        * The method is `private`.
+    1. Has the `public` method `sayName()`:
+        * Calls the `getName()` method, concatenating its return value with `"Hello, I am "`.
+            * For example, `"Hello, I am Joe Smith"`.
+        * Prints the resulting string.
+        * Does not directly pull from the name properties!
+1. Test the `Person` class (any lines that throw errors, comment them out after they fail. Show screen shots of failure/successes):
+    1. Create a new object `$joe` with the name `'Joe'` and `'Smith'`.
+    1. Directly print the object's first name. Did it work?
+    1. Directly print the object's last name. Did it work?
+    1. Call the object's `getName()` method. Did it work?
+    1. Call the object's `sayName()` method. Did it work?
+1. Add a `Teacher` class that inherits from `Person`.
+    * Read about calling the parent class' constructor: [**Calling parent constructor**](https://www.php.net/manual/en/language.oop5.decon.php).
+    1. In its constructor, expect a teaching topic, first name, and last name.
+        * Passes the first name and last name to the parent's constructor.
+    1. Has the `public` method `teach()`:
+        * It expects a string and prints the following:
+            * `"Hello, I am [firstName] [lastName], and I teach [teachingTopic]: today's lesson: [message]"`
+        * Does not directly access first name and last name. Uses the `getName()` method from the parent class.
+    1. Has the `public` method `sayAgeToStudent()`:
+        * Prints `"I am [age] years old"`.
+1. Update the original `Person` class:
+    * Add the `protected` property `age`. Assign it the value `0`.
+    * Add the `public` method `setAge()` that assigns a given number to the `age`.
+1. Test the `Teacher` class (any lines that throw errors, comment them out after you they fail. Show screen shots of failure/successes):
+    1. Instantiate a `Teacher` with `$jack = new Teacher('Jack','Dorsey','Math');`.
+    1. Try setting Jack's `age` directly. Did it work?
+    1. Try calling the `setAge()` method and give it the value `34`. Did it work?
+    1. Call the teacher's `teach()` method with the argument `"how to say hello"`. Did it work?
+    1. Call the teacher's `getAge()` method. Did it work?

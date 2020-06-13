@@ -18,8 +18,8 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
 1. recreate your mysql_credentials files from the previous prototype
     * mysql_credentials.php
     * mysql_credentials.config
-    * .gitignore
-1. in your mysql_credentials.php file, remote the truthy test to print the $conn variable.  We won't do that again.  You will need the falsey test.  Then exit.
+    * .gitignore ... what was this used for again? 
+1. in your mysql_credentials.php file, remove the truthy test to print the $conn variable.  We won't do that again.  You will need the falsey test.  Then exit.
 1. make a file, endpoint.php
 1. In endpoint.php, require once your credential file to connect
 1. in phpMyAdmin test write a query to select all information from the table you are going to draw data from
@@ -32,6 +32,7 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
     * give mysqli_query the variable that holds your query
 1. see if result is truthy or falsey
     * if it is falsey, print an error and use the function exit() to stop the code
+    * you have learned a way to throw an error... use it!
         * to print an error for your mysqli query, take a look at [**mysqli_error**](https://www.php.net/manual/en/mysqli.error.php)
 1. If you didn't get an error, intentionally get an error by misnaming the table
     * ![intentional error](../../demoassets/php_mysql_querying_wrong_table.png)
@@ -56,4 +57,6 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
 1. test your page, see if you got appropriate output
     * straight minified output ![intentional error](../../demoassets/php_mysql_query_minified_output.png)
     * prettified example put through jsonlint.com ![intentional error](../../demoassets/php_mysql_query_pretty_output.png)
+1. Add commit and push your code
+1. Did you... accidentally push your mysql_credentials.php file?  Check with a staff member on how to remove it.
 

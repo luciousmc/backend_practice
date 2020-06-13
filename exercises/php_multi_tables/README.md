@@ -194,4 +194,4 @@ Check out a new branch from master for this exercise.  Then navigate to exercise
     }
 }
 ```
-1. extra: make a file, getData3, that instead of using the above method, uses the group by and group concat functions instead
+1. extra: make a file, getData3, that instead of using the above method, uses the [`GROUP BY`](https://dev.mysql.com/doc/refman/8.0/en/group-by-handling.html) key phrase and [`GROUP_CONCAT()`](https://dev.mysql.com/doc/refman/8.0/en/group-by-functions.html#function_group-concat) function instead

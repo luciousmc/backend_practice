@@ -59,7 +59,7 @@ name" and exit
     * ![selecting db and opening sql](../../demoassets/php_received_data_07.png)
 1. make a pull request for your current status before moving onto the next part
 1. sometimes data is sent to PHP via json.  Axios, Fetch, even AJAX can send json data instead of url-encoded data.  By default, currently, PHP doesn't have the ability to parse it from the body.  So we're going to draw it out of the raw body.
-1. use file_get_contents, but the file will be "php://input", this is the raw body json_input
+1. use [`file_get_contents()`](https://www.php.net/manual/en/function.file-get-contents.php), but the file will be [`"php://input"`](https://www.php.net/manual/en/wrappers.php.php). This is the raw body input, which happens to be a JSON string.
 1. put the result of file_get_contents into a variable called $json_input
 1. the contents of $input will now be a json encoded string.  Use json_decode to convert it to an object/array.  
     * first param, give it json_input

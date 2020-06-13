@@ -1,4 +1,4 @@
-# PHP if_switch
+# PHP functions
 
 Introduction to PHP code - functions
 

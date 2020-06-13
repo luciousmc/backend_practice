@@ -1,4 +1,4 @@
-# PHP if_switch
+# PHP error handling
 
 Introduction to PHP code - error handling
 

@@ -1,4 +1,4 @@
-# PHP if_switch
+# PHP dom_elements
 
 Introduction to PHP code - dom elements
 
